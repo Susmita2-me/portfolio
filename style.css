@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 70vh;
+    background-image: url('WhatsApp\ Image\ 2024-07-13\ at\ 21.35.52.jpeg');
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    left:0;
+}
+.header-text{
+   max-width: 600px;
+
+}
+.header-text h3{
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+.header-text h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin:-3px 0 ;
+    
+
+}
+
+
+
+
+.container {
+    padding: 10px 10%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/* About Section */
+#about {
+    padding: 60px;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    display: flex; 
+    align-items: center; 
+}
+
+.about-col-1 img {
+    width: 100%;
+    height: auto; 
+    max-width: 400px; 
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.about-col-2 p {
+    font-size: 18px; /* Increase the font size */
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: #ababab; /* Ensuring the color is consistent */
+}
+
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.5s;
+}
+
+.tab-links:hover::after,
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Projects Section */
+#Projects {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.Projectslist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.Projectslist div {
+    background: url(Screenshot\ \(634\).png);
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.Projectslist h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.Projectslist a {
+    padding: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 30px;
+    text-align: justify;
+    font-style:oblique;
+}
+
+.Projectslist div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+.Projectslist div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 15px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.profiles-icons {
+    margin-top: 30px;
+}
+
+.profiles-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.profiles-icons a:hover {
+    color: #3300ff;
+    transform: translate(-5px);
+}
+
+.btn2 {
+    display: inline-block;
+    background: #4c54af;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background: #45a049;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form btn2 {
+    padding: 14px;
+    font-size: 18px;
+}
+.copyright{
+    width:100%;
+    text-align:center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top:20px;
+}
+.copyright i{
+    color:rgb(255, 0, 4);
+}
+
+@media (min-width: 1024px) {
+    .fa-regular fa-circle-xmark,
+    .fa-solid fa-bars menu-toggle {
+        display: none;
+    }
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url('inspect.jpeg');
+        background-size: cover; /* Adjust the background size for better fit */
+        background-position: center;
+    }
+    
+    .header-text {
+        margin-top: 70%; /* Adjust margin for better alignment on small screens */
+        font-size: 16px; /* Reduce font size for smaller screens */
+        text-align:justify; /* Center align text */
+    
+    }
+    
+    .header-text h1 {
+       
+        font-size: 30px; /* Adjust font size */
+    }
+    
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 25px;
+        text-align: center; /* Center align menu items */
+    }
+    
+    nav .menu-toggle {
+        display: block; /* Ensure menu toggle is visible on small screens */
+    }
+    
+    .sub-title {
+        font-size: 40px; /* Adjust subtitle font size */
+        text-align: center; /* Center align subtitles */
+    }
+    
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Make columns full width on small screens */
+    }
+    
+    .about-col-1 img {
+        width: 90%; /* Make image larger on small screens */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 15px;
+        margin: 0 auto; /* Center align image */
+        display: block; /* Ensure image is a block element for centering */
+    }
+    
+    .about-col-2 {
+        font-size: 14px; /* Reduce font size */
+        margin-top: 20px; /* Add margin to space out from image */
+        text-align: center; /* Center align text */
+    }
+    
+    .tab-titles {
+        display: flex;
+        justify-content: center; /* Center align tab links */
+        margin: 20px 0 40px;
+    }
+    
+    .tab-links {
+        font-size: 16px; /* Adjust tab link font size */
+        margin: 0 10px; /* Adjust margin for spacing between tabs */
+        cursor: pointer;
+    }
+    
+    .tab-contents {
+        text-align: center; /* Center align text in tab contents */
+    }
+    
+    .Projectslist {
+        flex-direction: column;
+        align-items: center; /* Center align project items */
+    }
+    
+    .Projectslist div {
+        width: 100%; /* Make project items full width */
+        margin-bottom: 20px;
+        text-align: center; /* Center align text within project items */
+    }
+    
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Make contact sections full width */
+        margin-bottom: 20px;
+        text-align: center; /* Center align text */
+    }
+    
+    .profiles-icons {
+        text-align: center; /* Center align social icons */
+    }
+    
+    .btn2 {
+        display: block;
+        width: 100%; /* Make buttons full width */
+        text-align: center;
+    }
+    
+    .copyright {
+        font-size: 14px; /* Reduce copyright font size */
+        text-align: center; /* Center align copyright text */
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-icon,
+    .close-icon {
+        display: none;
+    }
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url('inspect.jpeg');
+        background-size: cover; /* Adjust the background size for better fit */
+        background-position: center;
+    }
+    
+    .header-text {
+        margin-top: 70%; /* Adjust margin for better alignment on small screens */
+        font-size: 16px; /* Reduce font size for smaller screens */
+        text-align:justify; /* Center align text */
+    
+    }
+    
+    .header-text h1 {
+       
+        font-size: 30px; /* Adjust font size */
+    }
+    
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 25px;
+        text-align: center; /* Center align menu items */
+    }
+    
+    nav .menu-toggle {
+        display: block; /* Ensure menu toggle is visible on small screens */
+    }
+    
+    .sub-title {
+        font-size: 40px; /* Adjust subtitle font size */
+        text-align: center; /* Center align subtitles */
+    }
+    
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Make columns full width on small screens */
+    }
+    
+    .about-col-1 img {
+        width: 90%; /* Make image larger on small screens */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 15px;
+        margin: 0 auto; /* Center align image */
+        display: block; /* Ensure image is a block element for centering */
+    }
+    
+    .about-col-2 {
+        font-size: 14px; /* Reduce font size */
+        margin-top: 20px; /* Add margin to space out from image */
+        text-align: center; /* Center align text */
+    }
+    
+    .tab-titles {
+        display: flex;
+        justify-content: center; /* Center align tab links */
+        margin: 20px 0 40px;
+    }
+    
+    .tab-links {
+        font-size: 16px; /* Adjust tab link font size */
+        margin: 0 10px; /* Adjust margin for spacing between tabs */
+        cursor: pointer;
+    }
+    
+    .tab-contents {
+        text-align: center; /* Center align text in tab contents */
+    }
+    
+    .Projectslist {
+        flex-direction: column;
+        align-items: center; /* Center align project items */
+    }
+    
+    .Projectslist div {
+        width: 100%; /* Make project items full width */
+        margin-bottom: 20px;
+        text-align: center; /* Center align text within project items */
+    }
+    
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Make contact sections full width */
+        margin-bottom: 20px;
+        text-align: center; /* Center align text */
+    }
+    
+    .profiles-icons {
+        text-align: center; /* Center align social icons */
+    }
+    
+    .btn2 {
+        display: block;
+        width: 100%; /* Make buttons full width */
+        text-align: center;
+    }
+    
+    .copyright {
+        font-size: 14px; /* Reduce copyright font size */
+        text-align: center; /* Center align copyright text */
+    }
+}
+
+
+
+
+

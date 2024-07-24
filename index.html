@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a017593354.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+   <div id="header">
+       <div class="container">
+           <nav>
+               <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#skills">Skills</a></li>
+
+                   <li><a href="#Projects">Projects</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#contact">Contact</a></li>
+ 
+
+                   
+                   <li class="menu-close"><i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i></li>
+               </ul>
+               <i class="fa-solid fa-bars menu-toggle" onclick="openmenu()"></i>
+           </nav>
+           
+           
+           
+               
+               
+               <div class="header-text">
+                <h3 class="typed-heading">
+                <span class="typed-text"></span>
+                <h3>Hi, It's me</h3>
+               <h1>Susmita Das</h1>
+                    
+                <span>I'm a <span id="dynamic-text"></span></span>
+                
+               <p>Expertise to create website & design</p>
+               
+               <script src="main.js"></script>
+                </h3>
+                </div>
+           </div>
+       </div>
+   </div>
+   
+   <div id="about">
+       <div class="container">
+           <div class="row">
+               <div class="about-col-1">
+                   <img src="background-removebg-preview.png" alt="Background Image">
+               </div>
+               <div class="about-col-2">
+                   <h1 class="sub-title">About Me</h1>
+                   <p>I am Susmita Das, a B.Tech graduate in Electronics and Communication from B.P. Poddar Institute of Management & Technology. With a solid foundation in embedded systems, digital communication, and signal processing, I am dedicated to leveraging my technical expertise to drive innovation and solve complex challenges.</p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                       <p class="tab-links" onclick="opentab('Education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>C Programming </span> (Advanced)</li>
+                        <li><span>Data Structure & Algo</span>  (Advanced)</li>
+                        <li><span>Responsive Web Development</span><br>(HTML--Advanced)<br>(CSS--Advanced)<br>(JavaScript--Advanced)<br>(BootStrap--Intermediate)</li>
+                        <li><span>Java</span> (Advanced)</li>
+                        <li><span>C++</span> (Intermediate)</li>
+                        <li><span>Python</span> (Intermediate)</li>
+                        <li><span>SQL with Database Management</span> (Advanced)</li>
+                    </ul>
+                </div>
+                 
+                   <div class="tab-contents" id="Experience">
+                       <ul>
+                           <li><span>2024</span><br>Student Coordinator at Techstorm 2.24, Annual Techfest of BPPIMT</li>
+                           <li><span>2023</span><br>Summer Intern at Jadavpur University</li>
+                           <li><span>2023-present</span><br>Vice-President of SPIE Student Chapter, BPPIMT</li>
+                           <li><span>2022-24</span><br>Core Member of Visual Arts Forum, BPPIMT</li>
+                       </ul>
+                   </div>
+                   <div class="tab-contents" id="Education">
+                       <ul>
+                           <li><span>2025</span><br>B.Tech from B.P. Poddar Institute of Management & Technology  (GPA 7.5/10) </li>
+                           <li><span>2021</span><br>Class XII from Bidhannagar Govt. High School  (81.20%)</li>
+                           <li><span>2019</span><br>Class X from Chittaranjan Colony Hindu Vidyapith For Girls  (88.42%)</li>
+                       </ul>
+                   </div>
+                   
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   <div id="Projects">
+       <div class="container">
+           <h1 class="sub-title">My Projects</h1>
+           <div class="Projectslist">
+               <div>
+                <i class="fa-solid fa-clock"></i>
+                   <h2>Digital Clock</h2>
+                   <p>The digital clock is designed to display the current time accurately, with features including a 24-hour format and user-friendly interface.</p>
+                   <a href="https://susmita2-me.github.io/Digital-Clock/">Watch live</a>
+               </div>
+               <div>
+                <i class="fa-solid fa-gamepad"></i>
+                   <h2>Hey!Let's Play!!</h2>
+                   <p>Experience the thrill of classic arcade fun with my Breakout Game project. Featuring smooth gameplay and responsive controls, this game challenges you to break through layers of bricks using a paddle and ball, offering hours of entertainment and a nostalgic gaming experience.</p>
+                   <a href="https://susmita2-me.github.io/Breakout-Game/">Play Game</a>
+               </div>
+               <div>
+                <i class="fa-solid fa-book"></i>
+                   <h2>Library Catalogue</h2>
+                   <p>Designed to efficiently manage and organize book collections. This system streamlines the process of cataloging, searching, and borrowing books, making library management easier and more effective</p>
+                   <a href="https://github.com/Susmita2-me/Library-Catalog">Add yours</a>
+               </div>
+               <div>
+                <i class="fa-solid fa-note-sticky"></i>
+                   <h2>Sticky Note</h2>
+                   <p>Remind what to do</p>
+                   <a href="https://susmita2-me.github.io/Sticky-Note/">Stick here</a>
+               </div>
+
+
+               </div>
+
+           </div>
+       </div>
+   </div>
+   
+   <div id="portfolio">
+       <div class="container">
+           <!-- Add portfolio content here -->
+       </div>
+   </div>
+   
+   <div id="contact">
+       <div class="container">
+           <div class="row">
+               <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>
+                   <p><i class="fa-regular fa-paper-plane"></i>sdas10615@gmail.com</p>
+                   <p><i class="fa-solid fa-square-phone"></i>8584093033</p>
+                   <div class="profiles-icons">
+                       <a href="https://www.linkedin.com/in/susmita-das28/"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                       <a href="https://www.instagram.com/susmita_das28?igsh=MXhneG9yazkxYnFneQ=="><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+                   <a href="downloads/Susmita Das_Resume.pdf" download class="btn btn2">Download CV</a> 
+               </div>
+               <div class="contact-right">
+                   <form name="submit-to-google-sheet">
+                       <input type="text" name="Name" placeholder="Your Name" required>
+                       <input type="email" name="Email" placeholder="Your Email" required>
+                       <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                       <button type="submit" class="btn btn2">Submit</button>
+                   </form>
+                   <span id="msg"></span>
+               </div>
+           </div>
+       </div>
+       <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i> Susmita</p>
+       </div>
+   </div>
+   
+   <script>
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname) {
+           for (var tablink of tablinks) {
+               tablink.classList.remove("active-link");
+           }
+           for (var tabcontent of tabcontents) {
+               tabcontent.classList.remove("active-tab");
+           }
+           document.querySelector("[onclick=\"opentab('" + tabname + "')\"]").classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+       }
+
+       var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwkM4KvniUeKYkP9CRWBrL-fE17IUY2-KBFni7qJigaogOkAptmtWOWihKoq6sl_2RG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+        
+    .catch(error => console.error('Error!', error.message));
+})
+
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   
+
+    var typed2 = new Typed('#dynamic-text', {
+        strings: ["passionate Electronics Engineer", "Web Developer"],
+        typeSpeed: 40,
+        backSpeed: 30,
+        backDelay: 1500,
+        startDelay: 500,
+        loop: true,
+        showCursor: true
+    });
+});
+</script>
+
+</body>
+</html>
